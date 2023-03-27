@@ -1,0 +1,181 @@
+<html>
+
+<head>
+  <title>Final Project</title>
+</head>
+
+<body>
+  <script>
+    //sandbox-themeforest.net
+    // function login(){
+
+    //   var name = prompt("Name");
+    //     var surname = prompt("Surname");
+    //     var email = prompt("Enter the email");
+    //     var password = prompt("Enter the password");
+
+    //     var loginnedEmail = [];
+    //     var loginnedPassword = [];
+
+    //     loginnedEmail.push(email);
+    //     loginnedPassword.push(password);
+    // }
+
+    // var loginnedEmail = [];
+    // var isRegistered = false;
+    // var isLogin = true;
+    // var exit = false;
+    // while (exit == false) {
+    //   var given = Number(prompt("Please enter the number! "));
+    //   if (isNaN(given) == true) {
+    //     alert("This is incorrect value!");
+    //     continue;
+    //   }
+
+    //   if (given == 1) {
+    //     var emailCheck = prompt("Enter the email");
+    //     var passwordCheck = prompt("Enter the password");
+
+    //     for (var i = 0; i < loginnedEmail.length; i++) {//:birincide loginnedemail=0 olur ona gore bribasa welcome olur
+    //       if (emailCheck != loginnedEmail[i]) {
+    //         alert("This is unRegister account.Please Register!");
+    //         isLogin = false;
+    //       }
+    //     }
+    //     if(isLogin == true){
+    //       alert("welcome!");
+    //     }
+    //   }
+
+
+    //   else if (given == 2) {
+
+    //     var name = prompt("Name");
+    //     var surname = prompt("Surname");
+    //     var email = prompt("Enter the email");
+    //     var password = prompt("Enter the password");
+    //     //var loginnedEmail = [];
+
+    //     loginnedEmail.push(email);
+    //    //loginnedEmail[0] = "null";
+    //     for (var i = 0; i < loginnedEmail.length; i++) {
+    //       loginnedEmail.pop();
+    //       if (loginnedEmail[i] == email) {
+    //         //loginnedEmail.pop(email);
+    //         alert("this is registered account!Please login!");
+    //         isRegistered = true;
+    //       }
+    //     }
+    //     if(isRegistered == false){
+    //       alert("You are registered!");
+    //       loginnedEmail.push(email);
+    //     }
+
+    //   }
+    //   else if (given == 3) {
+    //     exit = true;
+    //   }
+    //   else {
+    //     alert("This is incorrect number!");
+    //   }
+
+    // }
+
+  //  function login() {
+    //   if (registerEmail == null && registerPassword == null) {
+    //     alert("Please register! For register click 2");
+
+    //   }
+    //   else {
+    //     var loginEmail = prompt("Email :");
+    //     var loginPassword = prompt("Password : ");
+
+
+
+    //     if (loginEmail == registerEmail && loginPassword == registerPassword) {
+    //       alert("Welcome!");
+    //     }
+    //     else {
+    //       alert("Incorrect email or password !!!");
+    //     }
+
+    //   }
+    //   return;
+
+    // }
+    var registerEmails = [];
+    var registerPasswords = [];
+    exit = false;
+    while (exit == false) {
+      var given = Number(prompt("Enter the number for operation!"));
+      if (isNaN (given) == true) {
+        alert("Incorrect value!");
+        continue;
+      }
+
+      if (given == 1) {
+
+        if (registerEmail == null && registerPassword == null) {
+          alert("Please register! For register click 2");
+
+        }
+        else {
+          var loginEmail = prompt("Email :");
+          var loginPassword = prompt("Password : ");
+
+
+
+          if (loginEmail == registerEmails && loginPassword == registerPasswords) {
+            alert("Welcome!");
+            
+          }
+          else {
+            alert("Incorrect email or password !!!");
+          }
+
+        }
+      }
+      else if (given == 2) {
+        if (((loginEmail == registerEmails && loginPassword == registerPasswords) == true) && (registerEmail != null)) {
+          alert("You just Loginned.You can not register.If you want to register,please quit and register");
+        }
+        else{
+        
+          var name = prompt("Name : ");
+          var surname = prompt("Surname : ");
+          var registerEmail = prompt("Email : ");
+          var registerPassword = prompt("Password : ");
+          registerEmails.push(registerEmail);
+          registerPasswords.push(registerPassword);
+          alert("Register is done!")
+        }
+
+      }
+      else if (given == 3) {
+        alert("Quit!");
+        exit = true;
+      }
+      else if (given == 4) {
+        if ((loginEmail == registerEmails && loginPassword == registerPasswords) == false) {
+          alert("Please Login !!!");
+        }
+        else {
+          var name = prompt("Name : ");
+          var surname = prompt("Surname : ");
+          var registerEmail = prompt("Email : ");
+          var registerPassword = prompt("Password : ");
+          alert("Updated your profile!");
+
+        }
+      }
+      else {
+        alert("Incorrect number!");
+      }
+    }
+
+   
+//
+  </script>
+</body>
+
+</html>

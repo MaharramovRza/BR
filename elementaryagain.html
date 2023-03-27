@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title>elementaryAgain</title>
+  </head>
+  <body>
+    
+    
+    <script>
+      var numbers = [678, 45, 67, 89, 23, 545, 188, 293];
+     // var sum = 0; bunu iceride teyin elemek lazimdi,cunki basqa deyer olacaq
+     //var count = 0; hemcinin bunu da
+     // var arr = []; hemcinin bu 
+     //var arr1 = []; hemcinin bu :)
+      var largest = numbers[0];
+      var smallest = numbers[0];
+      function FindSum(array){
+        var sum = 0;
+        for(var i=0;i<array.length;i++){
+          sum = sum + array[i];
+        }
+        return sum;
+      } 
+      function FindMean(array){
+        var sum = 0 ;
+        for(var i=0;i<array.length;i++){
+          sum = sum + array[i];
+        }
+        mean = sum/array.length;
+        return mean;
+      }
+      function FindLength(array){
+        count = 0;
+        for(var i=0;i<array.length;i++){
+          count +=1;
+        }
+        return count;
+      }
+      function FindBtwn100_200(array){
+        var arr = [];
+        for(var i=0;i<array.length;i++){
+          if(array[i]>100 && array[i]<200){
+           var num = array[i];
+            arr.push(num);
+          }
+        }
+        return arr;
+      }
+      function FindEvenNumbers(array){
+        var arr1 = [];
+        for(var i=0;i<array.length;i++){
+          if(array[i]%2 == 0){
+            var evenNum = array[i];
+            arr1.push(evenNum);
+          }
+        }
+        return arr1;
+      }
+      function FindLargestNumber(array){
+        for(var i=0;i<array.length;i++){
+          if(largest <= array[i]){
+            largest = array[i];
+          }
+        }
+        return largest;
+      }
+      function FindSmallestNumber(array){
+        for(var i=0;i<array.length;i++){
+          if(smallest >= array[i]){
+            smallest = array[i];
+          }
+        }
+        return smallest;
+      }
+      function FindSubBtwnSmalAndLarge(array){
+        for(var i=0;i<array.length;i++){
+          if(largest <= array[i]){
+            largest = array[i];
+          }
+          if(smallest >=array[i]){
+            smallest = array[i];
+          }
+        }
+       var sub = largest - smallest;
+        return sub;
+      }
+
+      
+      var exit = false;
+      while(exit == false){
+        var number = Number(prompt("Enter the number for function! "));
+        
+
+        if(isNaN(number) == true || (number != 0 && number!=1 && number!=2 && number!=3 && number!=4 && number!=5 && number!=6 && number!=7 && number!=8)){
+          alert("That is incorrect number.Please enter the number again!");
+          continue;
+        }
+        
+        if(number == 1){
+          console.log(FindSum(numbers));
+        }
+        else if(number == 2){
+          console.log(FindMean(numbers));
+        }
+        else if(number == 3){
+          console.log(FindLength(numbers));
+        }
+        else if(number == 4){
+          console.log(FindBtwn100_200(numbers));
+        }
+        else if(number == 5){
+          console.log(FindEvenNumbers(numbers));
+        }
+        else if(number == 6){
+          console.log(FindLargestNumber(numbers));
+        }
+        else if(number == 7){
+          console.log(FindSmallestNumber(numbers));
+        }
+        else if(number == 8){
+          console.log(FindSubBtwnSmalAndLarge(numbers))
+        }
+        else if(number == 0){
+          exit = true;
+        }
+        else{
+          alert("Please enter the number between 1 and 8");
+        }
+      }
+
+      
+      
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    exit = false;
+    while (exit == false) {
+      var given = Number(prompt("Enter the number for operation!"));
+      if (isNaN (given) == true) {
+        alert("Incorrect value!");
+        continue;
+      }
+
+      if (given == 1) {
+        if (registerEmail == null && registerPassword == null) {
+          alert("Please Register!");
+        }
+        else {
+          var loginEmail = prompt("Email : ");
+          var loginPassword = prompt("Password : ");
+          if (registerEmail == loginEmail && registerPassword == loginPassword) {
+            alert("Welcome!");
+          }
+          else {
+            alert("Wrong email or password!");
+          }
+        }
+      }
+      else if (given == 2) {
+
+        if(((registerEmail == loginEmail && registerPassword == loginPassword) == true) && (loginEmail != null)){
+          alert("Please quit for register!");
+        }
+        else{
+        var name = prompt("Name : ");
+        var surname = prompt("Surname : ");
+        var registerEmail = prompt("Email : ");
+        var registerPassword = prompt("Password : ");
+        alert("Register is done");
+        }
+      }
+      else if (given == 3) {
+        if ((registerEmail == loginEmail && registerPassword == loginPassword) == false) {
+          alert("Please Login!");
+        } else {
+          var name = prompt("Name : ");
+          var surname = prompt("Surname : ");
+          var registerEmail = prompt("Email : ");
+          var registerPassword = prompt("Password : ");
+          alert("Update is done");
+        }
+      }
+      else if(given == 4){
+        alert("Quit");
+        exit = true;
+        
+      }
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>
