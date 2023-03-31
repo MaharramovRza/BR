@@ -1,0 +1,43 @@
+/* My Defaults */
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* End My Defaults */
+#header {
+  background-color: black;
+  
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li a{
+  text-transform: uppercase;
+  padding: 15px;
+  display: inline-block;
+  
+}
+#header a{
+  display: inline-block;
+  width: 67%;
+  text-align: right;
+  
+}
+
+
+
