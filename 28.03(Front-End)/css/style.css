@@ -1,14 +1,61 @@
-div{
-  
-  
-  /* background-image: url("../img/1h.jpg"); */
-  content: url("../img/1h.jpg");
+/* My Defaults */
 
-  padding: 10px;
-  width:22%;
-  height: 22%;
+*{
+  margin:0px;
+}
+
+a{
+  text-decoration: none;/*disappear under line*/
+}
+
+
+
+
+
+
+/* End My Defaults */
+
+/* Header */
+
+#header{
+ padding: 10px 30px ;
+ border-bottom: 1px solid black;
+}
+
+#logo{
+  
   display:inline-block;
-  background-repeat: no-repeat;  
+}
+
+ #logo .br{
+  font-size: 20px;
+  font-weight: bold;
+   text-transform: uppercase; /* All letters become upper */
+   margin-right:5px;
+   letter-spacing: 3px; /*Spaciing between letter */
+ }
+ 
+ #logo .arc{
+  font-size: 20px;
+  letter-spacing: 3px;
+ }
+
+ #nav{
+  display: inline-block;
+  width: 85%;
+  text-align: right;
+ }
+
+ #nav li{
+  display: inline-block;
+ }
+
+#nav li a{
+  color:#000;
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding:10px;
+  display: inline-block;
+  
   
 }
- 
