@@ -8,9 +8,25 @@ a{
   text-decoration: none;/*disappear under line*/
 }
 
+.container{
+  width: 95%;
+  margin: 0px auto;
+  
+}
 
+.title{
+  border-bottom:1px solid #eee;
+  padding: 15px 0px;
+  margin-top: 35px;
+}
+.title h2{
+  font-size: 30px;
+  margin-bottom: 5px;
+}
 
-
+p{
+  font-size: 20px;
+}
 
 
 /* End My Defaults */
@@ -19,7 +35,7 @@ a{
 
 #header{
  padding: 10px 30px ;
- border-bottom: 1px solid black;
+ border-bottom: 1px solid #eee;
 }
 
 #logo{
@@ -57,5 +73,174 @@ a{
   padding:10px;
   display: inline-block;
   
+}
+/* End of Header */
+
+/* Banner */
+#banner {
+  background-image: url("../img/banner.jpg");
+  height: 100vh;
+
+}
+
+#banner-text {
+text-align: center;
+padding-top: 25%;
+}
+
+#banner-text span {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight:bold;
+  background-color: black;
+  opacity:0.75;
+  color: #fff;
+  padding:15px;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+#banner-text h1{
+  display:inline-block;
+  color: #fff;
+  letter-spacing: 3px;
   
 }
+/* End of Banner */
+
+/* Projects */
+
+#projects {
+  margin-top: 30px;
+}
+
+#projects .project{
+  display:inline-block;
+  background-image: url("../img/1h.jpg");
+  height: 250px;
+  width: 22%;
+  background-repeat: no-repeat;
+  margin:20px 1.85%
+  
+}
+#projects .project.left{
+  margin-left: 0; 
+ }
+
+#projects .project.right{
+  margin-right: 0;
+}
+#projects .project span{
+  background-color: #000;
+  color: #fff;
+  padding: 6px;
+  display: inline-block;
+  font-size: 23px;
+}
+
+/* End of Projects */
+
+/* About */
+#about-text{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.about-images{
+  margin-top:40px;
+  margin-bottom: 60px;
+
+}
+
+.about-img{
+  display: inline-block;
+  width: 23%;
+  margin:0 1.1%;
+}
+.about-img img{
+  width: 100%;
+}
+
+.about-img h3{
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding-top: 15px;
+}
+.about-img h2{
+  font-size: 20px;
+  color: gray;
+  padding:15px 0;
+}
+
+.about-img #about-contact { 
+  text-align: center;
+  background-color: rgb(216, 215, 215);
+  padding: 5px 0;
+  margin-top: 15px;
+}
+.about-img #about-contact a{
+  color: #000;
+  font-size: 20px;
+}
+.about-img.right{
+  margin-right: 0;
+}
+.about-img.left{
+  margin-left: 0;
+}
+/* End of About */
+
+/* Contact */
+#contact p{
+  margin:15px 0;  
+} 
+#contact .nesc{
+border: 1px solid gray;
+color: gray;
+padding: 8px;
+font-size: 22px;
+margin:10px 0;
+} 
+
+#sendbox{
+  font-size: 22px;
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-top: 24px;
+}
+#map{
+  background-image: url("../img/map.jpg");
+  height: 100vh;
+  margin-top: 50px;
+}
+
+#footer{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  margin-top:10px;
+  font-size: 20px;
+
+}
+#footer a{
+  color:#fff;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
