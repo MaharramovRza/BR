@@ -1,0 +1,310 @@
+/* My Defaults */
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.container{
+  padding:0 20%;
+  padding-bottom:100px ;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.bdtrct{
+  padding-top: 80px;
+}
+
+.bdtrct h2{
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+.bdtrct span{
+  display: block;
+  text-align: center;
+  padding: 30px 0px;
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: gray;
+}
+
+
+
+/* End My Defaults */
+
+/* Header */
+
+#header{
+  background-color: black;
+  display: flex;
+  padding: 1%; 
+  gap:40px ;
+  position: fixed;
+  width: 100%;/*bunu vermesek fixed pozulacaq,ona goreki fixed verdikde parent icinde olan element qeder yer tutur*/
+  z-index: 99999;
+}
+#header a{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family:  "Lato", sans-serif;  
+  
+}
+#searchi{
+width: 70%;
+text-align: right; 
+}
+
+#header #searchi i{
+  color: white;
+}
+
+/* End of Header */
+
+
+/* Banner */
+
+#banner{
+position: relative;
+}
+#banner img{
+  height: 100%;
+  width: 100%;
+}
+
+#banner h3{
+  color: antiquewhite;
+  position: absolute;
+  top: 82%;
+  left: 48%;
+  font-size: 24px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 500;
+}
+#banner p{
+  position: absolute;
+  top:90%;
+  font-size: 16px;
+  color: antiquewhite;
+  font-family: "Lato", sans-serif;
+  left: 39%;
+  font-weight: 1000;
+}
+
+/* Banner End */
+
+/* The BAND */
+
+#band p{
+  text-align: center;
+  line-height: 1.5;
+  font-family: Verdana,sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+
+#members{
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 80px; */
+}
+#members .member{
+    text-align: center;
+}
+#members .member span{
+  width: 100%;
+  padding: 15px 0px;
+  display: block;
+  color: black;
+  font-size: 16px;
+
+}
+
+#members .member img{
+   width: 60%; 
+   margin-bottom: 20px;
+   border-radius: 4px;
+}
+
+/* END BAND */
+
+/* TOUR DATES */
+
+#tour{
+  background-color: black;
+}
+#tour .bdtrct h2{
+  color: white;
+  /* padding-top: 80px; */
+}
+
+#tour .dates{
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: baseline;
+}
+
+#tour .dates p{
+  /* display: inline-block; */
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+  color: gray;
+}
+#tour .dates span{
+  font-size: 17px;
+  background-color: rgb(244, 42, 42);
+  color: white;
+  padding: 4px 8px;
+  margin-left: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+
+.existing{
+  position: relative;
+}
+#tour .dates.existing span{
+  position: absolute;
+  right:  30px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 2px 8px;
+}
+
+
+#tickets{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.ticket {
+  background-color: white;
+  width: 32%;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+.ticket img{
+  width: 100%;
+}
+.ticket h3{
+  padding: 15px 15px;
+}
+.ticket span{
+  color: gray;
+  padding: 5px 15px;
+}
+.ticket p{
+  line-height: 1.5;
+  padding: 15px 15px;
+}
+
+.ticket a{
+  display: inline-block;
+  color:white;
+  background-color: black;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-left:15px;
+  margin-bottom: 20px;
+}
+
+/* END TOUR DATES */
+
+/* CONTACT */
+
+.conreg{
+  
+  display: flex;
+}
+.conreg #connections{
+  width: 50%;
+}
+.conreg #register{
+  width: 50%;
+}
+
+.connection{
+  padding: 5px 15px;
+  font-size: 20px;
+}
+.connection span{
+  margin-left: 10px;
+}
+
+
+#register .namemail{
+  display: flex;
+  justify-content: space-between;
+}
+#register .namemail div {
+  width: 49%;
+  border: 1px solid #eee;
+}
+#register input{
+  width: 100%;
+  padding: 15px;
+  
+}
+
+#register .msg{
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+#sendbox{
+  margin-top: 20px;
+  text-align: right;
+}
+
+#sendbox a{
+  display: inline-block;
+  background-color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+#footer{
+  /* display: flex;
+  justify-content: center; */
+  padding: 80px 0;
+  text-align: center;
+}
+#footer a{
+  color: gray;
+  font-size: 25px;
+}
+#footer span{
+  display: block;
+  color: gray;
+  font-size: 25px;
+  margin-top: 20px;
+}
+#footer span a{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
